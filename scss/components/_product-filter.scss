@@ -1,0 +1,41 @@
+.product-filter {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    color: #8b8b8b;
+    padding: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    outline: transparent;
+    transition: border-color 0.5s;
+
+    &:focus {
+      text-shadow: 2px 2px 2px rgba(139, 139, 139, 0.87);
+    }
+
+    &:hover {
+      border-bottom-color: #8b8b8b;
+    }
+
+    &:active {
+      color: $black;
+      border-bottom-color: $black;
+    }
+  }
+
+  .mixitup-control-active {
+    color: $black;
+  }
+}

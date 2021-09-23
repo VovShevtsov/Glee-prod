@@ -1,0 +1,39 @@
+.articles {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 43px;
+  }
+
+  &__link {
+    color: #262626;
+    padding: 0 26px 6px 0;
+    position: relative;
+
+    &::after {
+      content: ">";
+      position: absolute;
+      font-size: 24px;
+      font-weight: 400;
+      color: #262626;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -170px;
+  }
+
+  &__item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

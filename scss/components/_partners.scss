@@ -1,0 +1,19 @@
+.partners {
+  background-color: #fef7f0;
+  padding: 91px 0;
+  margin-bottom: 80px;
+
+  &--articles {
+    padding-top: 261px;
+  }
+
+  &__slider {
+    display: flex !important;
+    padding: 0 50px;
+  }
+
+  &__img {
+    max-width: 200px;
+    object-fit: cover;
+  }
+}

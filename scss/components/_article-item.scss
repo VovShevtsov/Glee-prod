@@ -1,0 +1,104 @@
+.article-item {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  max-width: 370px;
+  min-height: 420px;
+  overflow: hidden;
+  position: relative;
+
+  &__img {
+    max-width: 370px;
+    object-fit: cover;
+    margin-bottom: 34px;
+  }
+
+  &__link {
+    @extend %poppins-700;
+    font-size: 14px;
+    line-height: 1.42;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: $btn-bg;
+    text-align: center;
+    width: 103px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 25px;
+    position: absolute;
+    top: 233px;
+    left: 28px;
+    border: none;
+    outline: transparent;
+    transition: background-color 0.5s;
+
+    &:focus {
+      box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    }
+
+    &:hover {
+      background-color: $default;
+    }
+
+    &:active {
+      background-color: $black;
+    }
+  }
+
+  &__content {
+    padding: 0 28px;
+  }
+
+  &__text {
+    @include line-clamp(6);
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #262626;
+    padding-left: 3px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 12px;
+    min-height: 77px;
+  }
+
+  &__date {
+    @extend %rubik-400;
+    font-size: 12px;
+    line-height: 2.5;
+    color: #222933;
+    text-transform: uppercase;
+    padding-left: 13px;
+    margin-right: 20px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 10px;
+      width: 6px;
+      background-image: url(../../images/icon/article.png);
+      left: 7px;
+      top: 2px;
+    }
+  }
+
+  &__author {
+    @extend %rubik-400;
+    font-size: 12px;
+    line-height: 2.5;
+    color: #222933;
+    text-transform: uppercase;
+    padding-left: 13px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 10px;
+      width: 6px;
+      background-image: url(../../images/icon/article.png);
+      left: 7px;
+      top: 2px;
+    }
+  }
+}

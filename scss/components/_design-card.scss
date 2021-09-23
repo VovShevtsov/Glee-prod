@@ -1,0 +1,38 @@
+.design-card {
+  width: 370px;
+  height: 246px;
+  background-color: #f8f8f8;
+  padding: 36px 0 0 37px;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  &__title {
+    @include line-clamp(3);
+    max-width: 171px;
+    font-size: 20px;
+    color: $black;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @include line-clamp(2);
+    color: #a3bbc8;
+  }
+
+  &__img {
+    width: 370px;
+    height: 246px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}

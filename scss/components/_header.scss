@@ -1,0 +1,170 @@
+.header {
+  padding: 48px 0 45px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    padding-bottom: 8px;
+  }
+}
+
+
+.menu {
+  max-width: 1116px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 34px;
+    padding-bottom: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    @extend %rubik-500;
+    font-size: 15px;
+    color: #436372;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.5s;
+
+    &:focus {
+      outline: transparent;
+      text-shadow: 2px 2px 2px rgba(67, 99, 114, 0.87);
+    }
+
+    &:hover {
+      border-color: #436372;
+    }
+
+    &:active {
+      color: gray;
+
+    }
+  }
+}
+
+.nav {
+  display: flex;
+
+  &__btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 21px;
+    padding: 0;
+    border: transparent;
+    outline: transparent;
+    background-color: #edf1f4;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s, ;
+
+    &--menu {
+      margin-right: 0;
+    }
+
+
+    &:focus {
+      box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    }
+
+    &:hover {
+      background-color: $btn-bg;
+
+      path {
+        transition: fill 0.5s;
+        fill: #fff;
+      }
+
+    }
+
+    &:active {
+
+      path {
+        fill: red;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    height: 52px;
+    width: 90px;
+    background-color: $accent;
+    position: relative;
+    outline: transparent;
+    justify-content: center;
+    align-items: center;
+
+    &--left {
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 32px;
+        background-color: #fde7d3;
+        top: 10px;
+        right: 0;
+      }
+    }
+
+    &--right {
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      margin-right: 18px;
+    }
+
+    &:focus {
+      box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    }
+
+
+    &:hover {
+
+      path {
+        transition: fill 0.5s;
+        fill: #fff;
+      }
+    }
+
+    &:active {
+
+      path {
+        fill: red;
+      }
+    }
+  }
+
+  &__numb {
+    position: absolute;
+    top: 8px;
+    right: 26px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 10px;
+    line-height: 1.6;
+    text-align: center;
+    color: $default;
+  }
+}

@@ -1,0 +1,22 @@
+.products {
+  margin-bottom: 95px;
+  text-align: center;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px 47px -15px;
+  }
+
+  &__item {
+    margin: 0 15px 40px;
+  }
+}
+
+.title--products {
+  margin-bottom: 25px;
+}
+
+.product-filter--products {
+  margin-bottom: 71px;
+}

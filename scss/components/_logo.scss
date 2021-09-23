@@ -1,0 +1,9 @@
+.logo {
+
+  &__img {
+    max-width: 150px;
+    max-height: 40px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
